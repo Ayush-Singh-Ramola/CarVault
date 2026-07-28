@@ -171,7 +171,7 @@ async function main() {
           },
           images: {
             create: [0, 1, 2].map((i) => ({
-              url: `https://placehold.co/800x500?text=${encodeURIComponent(model)}+${i + 1}`,
+              url: `https://loremflickr.com/800/500/car,${bodyType.toLowerCase()}?lock=${randomInt(1, 999999)}`,
               isPrimary: i === 0,
               order: i,
             })),

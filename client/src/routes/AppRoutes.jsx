@@ -10,6 +10,7 @@ import Register from '@pages/Register';
 import Profile from '@pages/Profile';
 import CarsListing from '@pages/CarsListing';
 import CarDetail from '@pages/CarDetail';
+import Compare from '@pages/Compare';
 import Favorites from '@pages/Favorites';
 import NotFound from '@pages/NotFound';
 
@@ -24,6 +25,7 @@ export default function AppRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/cars" element={<CarsListing />} />
         <Route path="/cars/:slug" element={<CarDetail />} />
+        <Route path="/compare" element={<Compare />} />
 
         <Route element={<ProtectedRoute />}>
           <Route path="/profile" element={<Profile />} />
